@@ -1,11 +1,20 @@
-button{
-    border: 0 !important;
-    box-shadow: none;
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; 
 }
-button:focus{
-    box-shadow: none !important;
-    
+a {
+    text-decoration: none; 
+    color: black;
 }
+
+a:hover{
+    color: black;
+}
+
+li {
+    margin: auto 10px;
+}
+
 .two_btn {
     display: flex;
     justify-content: center;
@@ -53,31 +62,34 @@ h1 {
     font-weight: 700;
 }
 
+/* Nav Buttons */
+button{
+    border: 0 !important;
+    box-shadow: none;
+}
+button:focus{
+    box-shadow: none !important;
+    
+}
 .start_btn2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6990FF;
+    margin-left: 15px;
+    padding: 10px 15px;
+    background-color: #52C8C4;
     color: #fff;
     border: none;
-    border-radius: 7px;
-    \\font-weight: 500;
-    font-size: initial;
+    border-radius: 5px;
     text-align: center;
-    overflow: hidden;
-    max-width: 150px;
-    height: 50px;
-    text-decoration:none;
-    transition: all 1s linear;   
-    position: relative;
+    position: relative; 
 }
-.start_btn2 a {
-    position: absolute;
+#startBtn {
+    position: inherit;
+    color: #fff;
 }
 .start_btn2_cg{
-    width: 0;
-    height: 50px;
-    transition: width 1s;
+    width: 0px;
+    height: -webkit-fill-available;
+    border-radius: 5px;
+    transition: all 1.5s;
     position: absolute;
     top: 0;
     left: 0;
@@ -85,5 +97,53 @@ h1 {
 
 .start_btn2:hover .start_btn2_cg{
     width: 100%;
-    background-color: #1d59ff;
+    background-color: #278E8B;
+}
+
+#ws-logo{
+    height: 45px;
+}
+
+#navList li a{
+    
+}
+#navList li a:hover{
+    color: #5B93FB;
+}
+@media (max-width: 576px){
+    a{
+        font-size: 14px;
+    }
+
+    .start_btn2{
+        padding: 7px 15px;
+    }
+
+    #nav{
+        padding: 0;
+    }
+
+    #ws-logo{
+        height: 32px;
+        margin-left: 12px;
+    }
+
+    #navTitle, #navbtngp, #navtoggle{
+        margin-bottom: 20px;
+    }
+
+    #nbar{
+        padding: 8px 0;
+        border-top: 1px solid #E5E5E5;
+        border-bottom: 1px solid #E5E5E5;
+    }
+    li {
+        margin: 0;
+        padding: 8px 20px;
+    }
+
+    #navContainer{
+        margin-top: 20px;
+        padding: 0;
+    }
 }

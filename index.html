@@ -8,27 +8,29 @@
     <link href="index.css" rel="stylesheet">
 </head>
   <body>
-    <div class="navbar navbar-expand-xl mt-2">
-        <div class="container-fluid">
-          <a href="#" class="m-0 navbar-brand">
-            <img class="img-fluid" src="logo.svg" width="100">
+    <div id="nav" class="navbar navbar-expand-xl">
+        <div id="navContainer" class="container-lg container-fluid my-lg-2">
+          <a href="#" id="navTitle">
+            <img id="ws-logo" class="img-fluid" src="logo.svg">
           </a>
-          <div class="order-xl-last navbar-nav flex-row align-items-center ms-auto">
-            <a class="btn nav-item" href="#">Login</a>
-            <button class="nav-item start_btn2" style="min-width: 130px;">
+          <div id="navbtngp" class="order-xl-last navbar-nav flex-row align-items-center ms-auto">
+            <a id="loginBtn" href="#">Login</a>
+            <button class="start_btn2">
                 <span class="start_btn2_cg" ></span>
-                <a class="" href="#" style="text-decoration: none; color: white;">Start Free Trial</a>
+                <a id="startBtn" class="" href="#">Start Free Trial</a>
             </button>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nbar" aria-expanded="false" aria-controls="nbar">
+          <button id="navtoggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nbar" aria-expanded="false" aria-controls="nbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-center mt-2" id="nbar">
-              <ul class="navbar-nav gap-3" >
-                <li class="nav-item">Home</li>
-                <li class="nav-item">Login</li>
-                <li class="nav-item">Home</li>
-                <li class="nav-item">Home</li>
+          <div class="collapse navbar-collapse justify-content-center" id="nbar">
+              <ul id="navList" class="navbar-nav gap-3">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#home">About</a></li>
+                <li class="nav-item"><a href="#home">Feature</a></li>
+                <li class="nav-item"><a href="#home">Pricing</a></li>
+                <li class="nav-item"><a href="#home">News</a></li>
+                <li class="nav-item"><a href="#home">Contact</a></li>
               </ul>
           </div>
           
