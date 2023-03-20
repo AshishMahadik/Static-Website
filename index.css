@@ -54,9 +54,7 @@ li {
     width: 100%;
 }
 
-nav {
-    height: 80px;
-}
+
 h1 {
     font-size: 5vw;
     font-weight: 700;
@@ -110,7 +108,32 @@ button:focus{
 #navList li a:hover{
     color: #5B93FB;
 }
-@media (max-width: 576px){
+
+#navContainer{
+    position: relative;
+}
+
+#nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+@media (max-width: 1200px){
+    #nbar{
+        padding: 8px 0;
+        border-top: 1px solid #E5E5E5;
+        border-bottom: 1px solid #E5E5E5;
+        position: absolute;
+        top: 58px;
+        left: 0;
+        background: white;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px){
     a{
         font-size: 14px;
     }
@@ -136,6 +159,10 @@ button:focus{
         padding: 8px 0;
         border-top: 1px solid #E5E5E5;
         border-bottom: 1px solid #E5E5E5;
+        position: absolute;
+        top: 58px;
+        background: white;
+        width: 100%;
     }
     li {
         margin: 0;
