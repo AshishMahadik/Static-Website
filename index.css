@@ -5,16 +5,37 @@ body{
 a {
     text-decoration: none; 
     color: black;
+    transition: all .3s;
 }
 
 a:hover{
-    color: black;
+    color: #5B93FB;
 }
+
 
 li {
     margin: auto 10px;
 }
+h1 {
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-family: 'Poppins', sans-serif;
+}
 
+/* Nav Buttons */
+button{
+    border: 0 !important;
+    box-shadow: none;
+}
+button:focus{
+    box-shadow: none !important;
+    
+}
+
+
+
+/* NavBar Start */
 .two_btn {
     display: flex;
     justify-content: center;
@@ -29,6 +50,86 @@ li {
     right: 5px;
     border: none;
 }
+
+.start_btn {
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    position: relative; 
+    overflow: hidden;
+}
+#startBtn {
+    position: inherit;
+    color: #fff;
+    font-weight: 600;
+}
+.start_btn_cg{
+    width: 0px;
+    height: -webkit-fill-available;
+    border-radius: 5px;
+    transition: width .5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.start_btn_trg{
+    width:10px;
+    height:10px;
+    transform: rotate(45deg);
+    border: 1px solid #888787;
+    background: #fff;
+    position: absolute;
+    top: auto;
+    left: -24px;
+    transition: all .5s;
+    transition-delay: 0.25s;
+    outline: 2px solid white ;
+    margin-top: 7px;
+}
+
+.start_btn:hover .start_btn_cg{
+    width: 100%;
+    background-color: #278E8B;
+}
+
+.start_btn:hover .start_btn_trg{
+    left:-7px;
+}
+
+.start_btn_1{
+    margin-left: 15px;
+    background-color: #52C8C4;
+}
+
+
+#ws-logo{
+    height: 45px;
+}
+
+#navList li a{
+    
+}
+
+#navContainer{
+    position: relative;
+}
+
+#nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+/* NavBar End */
+
+
+
+
+/* Section 1 Start */
 
 .sec-1{
     background-image: url("/hero_bg.svg");
@@ -54,72 +155,115 @@ li {
     width: 100%;
 }
 
-
-h1 {
-    font-size: 5em;
-    font-weight: 700;
+.start_btn_2{
+    margin-left: 0px;
+    background-color: #6990FF;
+    padding: 12px 25px;
+    margin-top: 35px;
 }
 
-/* Nav Buttons */
-button{
-    border: 0 !important;
-    box-shadow: none;
-}
-button:focus{
-    box-shadow: none !important;
-    
-}
-.start_btn2 {
-    margin-left: 15px;
-    padding: 10px 15px;
-    background-color: #52C8C4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    position: relative; 
-}
-#startBtn {
-    position: inherit;
-    color: #fff;
-    font-weight: bold;
-}
-.start_btn2_cg{
-    width: 0px;
-    height: -webkit-fill-available;
-    border-radius: 5px;
-    transition: width .5s;
-    position: absolute;
-    top: 0;
-    left: 0;
+.start_btn_2:hover .start_btn_cg{
+    background-color: #4166AE;
 }
 
-.start_btn2:hover .start_btn2_cg{
-    width: 100%;
-    background-color: #278E8B;
-}
-
-#ws-logo{
-    height: 45px;
-}
-
-#navList li a{
-    
-}
-#navList li a:hover{
-    color: #5B93FB;
-}
-
-#navContainer{
+#row-1{
     position: relative;
 }
 
-#nav{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background: white;
+.floating-icons{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
+
+.floating-icons img{
+    position: absolute;
+}
+
+@keyframes animo-x {
+    50%{
+        transform: translateX(44px);
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+@keyframes anim-y {
+    50%{
+        animation-timing-function: cubic-bezier(0.55, 0, 0.2, 1);
+        transform: translateY(17px);      
+    }
+}
+@keyframes swing-anim {
+    65%{
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(-48px) rotate(-75deg);
+    }
+}
+@keyframes particalAnimation {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    20%{
+        transform: translate(80px, -10px);
+    }
+    40%{
+        transform: translate(140px, 70px);
+    }
+    60%{
+        transform: translate(90px, 130px);
+    }
+    80%{
+        transform: translate(-40px, 80px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes semi-rotate-anim{
+    50%{
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(25px) rotate(-53deg);
+    }
+}
+@keyframes up-down-anim  {
+    40%{
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(40px) rotate(-1deg);
+    }
+}
+
+.floating-icons img:nth-child(1){
+    left: 7%;
+    top: 62%;
+    animation: animo-x 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.floating-icons img:nth-child(2){
+    left: 30%;
+    top: 78%;
+    animation: anim-y 9s cubic-bezier(0.25, 0, 0.2, 1) infinite;
+}
+.floating-icons img:nth-child(3){
+    left: 40%;
+    top: 20%;
+    animation: swing-anim 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.floating-icons img:nth-child(4){
+    left: 42%;
+    top: 62%;
+    animation: particalAnimation 35s alternate infinite linear;
+}
+.floating-icons img:nth-child(5){
+    left: 90%;
+    top: 5%;
+    animation: semi-rotate-anim 9.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.floating-icons img:nth-child(6){
+    left: 85%;
+    top: 75%;
+    animation: up-down-anim 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Section 2 End */
+
 
 
 
