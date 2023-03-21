@@ -384,18 +384,14 @@ button:focus{
         font-size: 45px;
     }
 
-    .start_btn2{
+    .start_btn_1{
         padding: 7px 15px;
     }
-
-    
 
     #ws-logo{
         height: 32px;
         
     }
-
-    
 
     #nbar{
         padding: 8px 0;
@@ -406,6 +402,7 @@ button:focus{
         background: white;
         width: 100%;
     }
+
     li {
         margin: 0;
         padding: 8px 20px;
