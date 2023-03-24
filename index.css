@@ -229,7 +229,7 @@ button:focus{
 }
 
 .floating-icons{
-    position: absolute;
+    position: initial;
     width: 100%;
     height: 100%;
 }
