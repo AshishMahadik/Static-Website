@@ -4,6 +4,7 @@
 body{
     font-family: 'Inter', sans-serif;
     font-size: 16px; 
+    line-height: 1.6em;
 }
 
 section{
@@ -48,15 +49,29 @@ button:focus{
     
 }
 
-.sec-subtitle{
-    color: #52C8C4;
-    margin-bottom: 10px;
+.card-height-15{
+    height: 15px;
+    width: 100%;
 }
-
-.sec-title{
-    font-size: 42px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+.card-height-20{
+    height: 20px;
+    width: 100%;
+}
+.card-height-25{
+    height: 25px;
+    width: 100%;
+}
+.card-height-50{
+    height: 50px;
+    width: 100%;
+}
+.card-height-100{
+    height: 100px;
+    width: 100%;
+}
+.card-height-135{
+    height: 135px;
+    width: 100%;
 }
 
 /* Common css End */
@@ -456,19 +471,148 @@ button:focus{
     transition: all 0.3s ease;
 }
 
+.sec-subtitle{
+    color: #52C8C4 !important;
+    margin-bottom: 10px;
+}
+
+.sec-title{
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
 
 
 /* Section 2 End */
 
-@media (min-width: 1200px) {
-    .card-height-25{
-        height: 25px;
-        width: 100%;
+
+/* Section 3 Start */
+
+#section1 p{
+    color: #6B6B6B;
+}
+
+.sec-bg{
+    background: linear-gradient(257.51deg, #F2FCFE 44.07%, #FAF1FE 100%);
+}
+
+.about-subtitle{
+    margin-bottom: 0px;
+}
+
+.about-title{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.list-detail{
+    padding-left: 32px;
+}
+
+.tick{
+    left: 0;
+}
+
+
+/* Section 3 End */
+
+
+
+/* Funfact div start */
+.funfact{
+    margin-top: -135px;
+    margin-bottom: -135px;
+    
+}
+
+.funfact-card{
+    padding: 85px 0;
+    background-color: #6990FF;
+}
+
+.changing-no{
+    font-family: 'Poppins', sans-serif;;
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    align-self: start;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.funfact-item{
+    padding: 13px 2%;
+    
+}
+
+.funfact-item:not(:last-child){
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.funfact-item-icon{
+    background-color: white;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.funfact-item-detail h2{
+    font-size: 20px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 400;
+}
+
+/* Funfact fiv end */
+
+
+
+
+/* Section 5 Start */
+.retail-card-title{
+    font-size: 18px;
+    color: #1C2528;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.retail-list div{
+    padding: 25px 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+/* Section 5 End */
+
+
+
+@media (min-width: 1550px) {
+    .left-about{
+        margin-left: calc(-50vw + 50%);
+        margin-right: 115px;
+    }
+}
+
+@media (min-width: 1000px) {
+    
+    .funfact{
+        padding: 0 60px;
     }
 
-    .card-height-50{
-        height: 50px;
-        width: 100%;
+    .funfact-card{
+        border-radius: 10px;
     }
 }
 
@@ -569,4 +713,10 @@ button:focus{
         left: 79%;
     }
     
+}
+
+@media (max-width: 750px) {
+    .card-height-25{
+        height: 0;
+    }
 }
