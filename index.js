@@ -11,16 +11,20 @@ function change(id){
     let n,m,ids;
     if(id<10)
         n = 3, m = 1, ids=id;
+    else if(id<20)
+        n = 6, m = 2, ids = id - 10;
     else
-        n = 6, m = 2, ids=id-10;
+        n = 4, m = 3, ids = id - 20;
 
     const dot = document.querySelector(`.slider-${m} span:nth-child(${ids})`);
     dot.classList.toggle("selected-dot"); 
     for (let i = 1, j = ids+1; i <= n; i++,j++) {
-        if(m===1 && j>4)
-            j=1;
-        else if(m===2 && j>7)
-            j=1;
+        if (m === 1 && j > 4)
+            j = 1;
+        else if (m === 2 && j > 7)
+            j = 1;
+        else if (m === 3 && j > 5)
+            j = 1;
 
         if(document.querySelector(`.slider-${m} span:nth-child(${j})`).classList.contains("selected-dot")){
             document.querySelector(`.slider-${m} span:nth-child(${j})`).classList.toggle("selected-dot");
@@ -46,12 +50,12 @@ function change(id){
             break;
     
             default:
-            va=-1840;
+            va=0;
             break;
         }
         document.getElementById("slide").style.transform = `translate3d(${va}px, 0px, 0px)`;
     }
-    else{
+    else if(id<20){
         switch(id){
             case 11:
             va=0;
@@ -86,6 +90,34 @@ function change(id){
             break;
         }
         document.getElementById("slide2").style.transform = `translate3d(${va}px, 0px, 0px)`;
+    }
+    else {
+        switch(ids){
+            case 1:
+            va=0;
+            break;
+    
+            case 2:
+            va=-326;
+            break;
+    
+            case 3:
+            va = -652;
+            break;
+    
+            case 4:
+            va=-978;
+            break;
+            
+            case 5:
+            va=-1304;
+            break;
+    
+            default:
+            va=0;
+            break;
+        }
+        document.getElementById("slide3").style.transform = `translate3d(${va}px, 0px, 0px)`;
     }
     
 }
