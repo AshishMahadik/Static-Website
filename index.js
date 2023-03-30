@@ -121,3 +121,128 @@ function change(id){
     }
     
 }
+
+
+function isInViewport(ele) {
+    const rect = ele.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
+
+function eleview() {
+    if (isInViewport(document.getElementById("sub-1"))) {
+        if (document.getElementById("sub-1").classList.contains("text-anim")) {
+            
+        }
+        else {
+            document.getElementById("sub-1").classList.add("text-anim");
+        }
+    }
+    if (isInViewport(document.getElementById("sub-2"))) {
+        if (document.getElementById("sub-2").classList.contains("text-anim")) {
+            
+        }
+        else {
+            document.getElementById("sub-2").classList.add("text-anim");
+        }
+    }
+    if (isInViewport(document.getElementById("sub-3"))) {
+        if (document.getElementById("sub-3").classList.contains("text-anim")) {
+            
+        }
+        else {
+            document.getElementById("sub-3").classList.add("text-anim");
+        }
+    }
+    if (isInViewport(document.getElementById("sub-4"))) {
+        if (document.getElementById("sub-4").classList.contains("text-anim")) {
+            
+        }
+        else {
+            document.getElementById("sub-4").classList.add("text-anim");
+        }
+    }
+    if (isInViewport(document.getElementById("sub-5"))) {
+        if (document.getElementById("sub-5").classList.contains("text-anim")) {
+            
+        }
+        else {
+            document.getElementById("sub-5").classList.add("text-anim");
+        }
+    }
+    if (isInViewport(document.getElementById("sub-6"))) {
+        if (document.getElementById("sub-6").classList.contains("text-anim")) {
+            
+        }
+        else {
+            document.getElementById("sub-6").classList.add("text-anim");
+        }
+    }
+    if (isInViewport(document.getElementById("sub-7"))) {
+        if (document.getElementById("sub-7").classList.contains("text-anim")) {
+            
+        }
+        else {
+            document.getElementById("sub-7").classList.add("text-anim");
+        }
+    }
+    if (isInViewport(document.getElementById("sub-8"))) {
+        if (document.getElementById("sub-8").classList.contains("text-anim")) {
+            
+        }
+        else {
+            document.getElementById("sub-8").classList.add("text-anim");
+        }
+    }
+    if (isInViewport(document.getElementById("sub-8"))) {
+        if (document.getElementById("sub-8").classList.contains("text-anim")) {
+            
+        }
+        else {
+            document.getElementById("sub-8").classList.add("text-anim");
+        }
+    }
+    if (isInViewport(document.getElementById("sub-9"))) {
+        if (document.getElementById("sub-9").classList.contains("text-anim")) {
+            
+        }
+        else {
+            document.getElementById("sub-9").classList.add("text-anim");
+        }
+    }
+
+    if (isInViewport(document.getElementById("img-1"))) {
+        
+        if (document.getElementById("img-1").classList.contains("img-anim-left")) {
+        }
+        else
+            document.getElementById("img-1").classList.add("img-anim-left");
+    } 
+    if (isInViewport(document.getElementById("img-2"))) {
+        
+        if (document.getElementById("img-2").classList.contains("img-anim-bottom")) {
+        }
+        else
+            document.getElementById("img-2").classList.add("img-anim-bottom");
+    }
+    if (isInViewport(document.getElementById("img-3"))) {
+        
+        if (document.getElementById("img-3").classList.contains("img-anim-left")) {
+        }
+        else
+            document.getElementById("img-3").classList.add("img-anim-left");
+    } 
+    
+    if (isInViewport(document.getElementById("bar-1"))) {
+        
+        if (document.getElementById("bar-1").classList.contains("img-anim-right")) {
+        }
+        else
+            document.getElementById("bar-1").classList.add("img-anim-right");
+    } 
+}
+window.addEventListener('scroll', eleview);

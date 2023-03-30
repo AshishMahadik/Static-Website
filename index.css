@@ -151,6 +151,12 @@ button:focus {
   position: absolute;
   top: 0;
   left: 0;
+  background-color: #4166ae;
+  transition: all ease-in-out .3s;
+}
+
+.cg{
+  background-color: #278e8b !important;
 }
 
 .start_btn_trg {
@@ -170,7 +176,6 @@ button:focus {
 
 .start_btn:hover .start_btn_cg {
   width: 100%;
-  background-color: #278e8b;
 }
 
 .start_btn:hover .start_btn_trg {
@@ -289,10 +294,6 @@ button:focus {
   background-color: #6990ff;
   padding: 12px 25px;
   margin-top: 35px;
-}
-
-.start_btn_2:hover .start_btn_cg {
-  background-color: #4166ae;
 }
 
 #row-1 {
@@ -1017,6 +1018,69 @@ footer{
 /* Footer Ending */
 
 
+/* animation */
+@keyframes text-load {
+  0%{
+    opacity: 0;
+    bottom: -50px;
+  }
+  100%{
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes img-load-right {
+  0%{
+    opacity: 0;
+    right: -400px;
+  }
+  100%{
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@keyframes img-load-left {
+  0%{
+    opacity: 0;
+    left: -400px;
+  }
+  100%{
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes img-load-bottom {
+  0%{
+    opacity: 0;
+    bottom: -400px;
+  }
+  100%{
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+.text-anim{
+  position: relative;
+  animation: text-load ease-out 1.5s;
+}
+.img-anim-right{
+  position: relative;
+  animation: img-load-right ease-out 1.5s;
+}
+.img-anim-left{
+  position: relative;
+  animation: img-load-left ease-out 1.5s;
+}
+.img-anim-bottom{
+  position: relative;
+  animation: img-load-bottom ease-out 1.5s;
+}
+
+/* animation */
 
 
 @media (min-width: 1550px) {
