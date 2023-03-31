@@ -761,9 +761,11 @@ button:focus {
   align-items: center;
 }
 
-.slider-item:hover .item-quote {
-  color: #fff;
+.slider-item:hover .item-quote{
   background-color: #6990ff;
+}
+.slider-item:hover .item-quote svg{
+  color: #fff !important;
 }
 
 .item-detail {
