@@ -134,15 +134,33 @@ function isInViewport(ele) {
 };
 
 function eleview() {
-    if (isInViewport(document.getElementById("sub-1"))) {
+    if (isInViewport(document.getElementById("section-2"))) {
         if (document.getElementById("sub-1").classList.contains("text-anim")) {
-            
         }
         else {
             document.getElementById("sub-1").classList.add("text-anim");
         }
     }
-    if (isInViewport(document.getElementById("sub-2"))) {
+    if (isInViewport(document.getElementById("section3"))) {
+        if (document.getElementById("img-1").classList.contains("img-anim-left")) {
+        }
+        else {
+            document.getElementById("img-1").classList.add("img-anim-left");
+            document.getElementById("img-2").classList.add("img-anim-bottom");
+        }
+    } 
+    if (isInViewport(document.getElementById("section4"))) {
+        
+        if (document.getElementById("ch-1").classList.contains("img-anim-right")) {
+        }
+        else {
+            document.getElementById("ch-1").classList.add("change");
+            document.getElementById("ch-2").classList.add("change");
+            document.getElementById("ch-3").classList.add("change");
+            document.getElementById("ch-4").classList.add("change");
+        }
+    } 
+    if (isInViewport(document.getElementById("section5"))) {
         if (document.getElementById("sub-2").classList.contains("text-anim")) {
             
         }
@@ -150,15 +168,16 @@ function eleview() {
             document.getElementById("sub-2").classList.add("text-anim");
         }
     }
-    if (isInViewport(document.getElementById("sub-3"))) {
+    if (isInViewport(document.getElementById("section6"))) {
         if (document.getElementById("sub-3").classList.contains("text-anim")) {
             
         }
         else {
             document.getElementById("sub-3").classList.add("text-anim");
+            document.getElementById("bar-1").classList.add("img-anim-right");
         }
     }
-    if (isInViewport(document.getElementById("sub-4"))) {
+    if (isInViewport(document.getElementById("section7"))) {
         if (document.getElementById("sub-4").classList.contains("text-anim")) {
             
         }
@@ -166,7 +185,7 @@ function eleview() {
             document.getElementById("sub-4").classList.add("text-anim");
         }
     }
-    if (isInViewport(document.getElementById("sub-5"))) {
+    if (isInViewport(document.getElementById("section8"))) {
         if (document.getElementById("sub-5").classList.contains("text-anim")) {
             
         }
@@ -182,15 +201,16 @@ function eleview() {
             document.getElementById("sub-6").classList.add("text-anim");
         }
     }
-    if (isInViewport(document.getElementById("sub-7"))) {
+    if (isInViewport(document.getElementById("section10"))) {
         if (document.getElementById("sub-7").classList.contains("text-anim")) {
             
         }
         else {
             document.getElementById("sub-7").classList.add("text-anim");
+            document.getElementById("img-3").classList.add("img-anim-left");
         }
     }
-    if (isInViewport(document.getElementById("sub-8"))) {
+    if (isInViewport(document.getElementById("section11"))) {
         if (document.getElementById("sub-8").classList.contains("text-anim")) {
             
         }
@@ -198,14 +218,7 @@ function eleview() {
             document.getElementById("sub-8").classList.add("text-anim");
         }
     }
-    if (isInViewport(document.getElementById("sub-8"))) {
-        if (document.getElementById("sub-8").classList.contains("text-anim")) {
-            
-        }
-        else {
-            document.getElementById("sub-8").classList.add("text-anim");
-        }
-    }
+
     if (isInViewport(document.getElementById("sub-9"))) {
         if (document.getElementById("sub-9").classList.contains("text-anim")) {
             
@@ -215,34 +228,5 @@ function eleview() {
         }
     }
 
-    if (isInViewport(document.getElementById("img-1"))) {
-        
-        if (document.getElementById("img-1").classList.contains("img-anim-left")) {
-        }
-        else
-            document.getElementById("img-1").classList.add("img-anim-left");
-    } 
-    if (isInViewport(document.getElementById("img-2"))) {
-        
-        if (document.getElementById("img-2").classList.contains("img-anim-bottom")) {
-        }
-        else
-            document.getElementById("img-2").classList.add("img-anim-bottom");
-    }
-    if (isInViewport(document.getElementById("img-3"))) {
-        
-        if (document.getElementById("img-3").classList.contains("img-anim-left")) {
-        }
-        else
-            document.getElementById("img-3").classList.add("img-anim-left");
-    } 
-    
-    if (isInViewport(document.getElementById("bar-1"))) {
-        
-        if (document.getElementById("bar-1").classList.contains("img-anim-right")) {
-        }
-        else
-            document.getElementById("bar-1").classList.add("img-anim-right");
-    } 
 }
 window.addEventListener('scroll', eleview);
